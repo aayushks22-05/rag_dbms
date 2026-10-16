@@ -1,0 +1,11 @@
+Project,Corpus passages,Strategy,Indexed vectors,Index size (MB),Avg latency (ms/query),Source mapping coverage (%),Eligible queries,Recall@5,MRR@10,nDCG@10,Flat agreement@5
+rag_dbms,5000,Flat,5000,7.3243,1.009,100.0,0,,,,1.0
+rag_dbms,5000,IVF-PQ,5000,0.2351,0.096,100.0,0,,,,0.3474
+rag_dbms,5000,Parent-Child,16002,23.4405,2.9802,34.01,0,,,,0.0882
+rag_dbms,5000,Summary,1000,1.4649,0.0822,100.0,0,,,,0.154
+rag_dbms,5000,RAPTOR,1010,1.4795,0.0775,100.0,0,,,,0.2092
+rag_dbms_10K,10000,Flat,10000,14.6485,1.0936,100.0,0,,,,1.0
+rag_dbms_10K,10000,IVF-PQ,10000,0.3877,0.1056,100.0,0,,,,0.3292
+rag_dbms_10K,10000,Parent-Child,32155,47.1021,4.608,33.74,0,,,,0.0864
+rag_dbms_10K,10000,Summary,2000,2.9297,0.161,100.0,0,,,,0.1176
+rag_dbms_10K,10000,RAPTOR,2010,2.9444,0.1674,100.0,0,,,,0.1934

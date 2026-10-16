@@ -1,0 +1,6 @@
+﻿Strategy,Avg query latency (ms),Index size (MB),Recall@5 proxy,Flat agreement@5,MRR@5 proxy,nDCG@5 proxy,Source mapping coverage (%),Indexed vectors,Eligible queries,Notes
+Flat,0.0915,14.6485,1.0,1.0,1.0,1.0,100.0,10000,1000,"Exact search over all 10,000 passages. Build time this run: 0.007s."
+IVF-PQ,0.0459,0.476,0.3526,0.3526,0.6547,0.3951,100.0,10000,1000,"Rebuilt in memory; nlist=100, nprobe=10, M=48, 4-bit PQ. Build time this run: 0.938s."
+Parent-Child,0.3932,47.1021,0.4108,0.4108,0.6694,0.4385,100.0,32155,1000,Sentence hits mapped to parent passages; candidate depth=50.
+Summary,0.0931,14.6485,0.4998,0.4998,0.809,0.5476,100.0,10000,1000,"Full-corpus Summary index: 10,000 summary vectors linked to source passages out of 10,000 corpus passages."
+RAPTOR,0.1412,14.6631,0.9962,0.9962,0.9983,0.9966,100.0,10010,1000,Full-corpus RAPTOR: 10000 base documents plus 10 cluster-summary vectors. Schema-v2 source mappings expand cluster-summary hits to source document IDs; proxy score is not ground-truth relevance.
